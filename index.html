@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+        font-family: sans-serif;
+    }
+
+    .calculator{
+        height: 40rem;
+        width: 30rem;
+        border: 3px, solid, black;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(211, 211, 211, 0.582);
+    }
+
+    .display{
+        height: 40px;
+        background-color: rgb(207, 235, 175);
+        margin-bottom: 15px;
+        text-align: right;
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 5px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+
+</style>
+
+<body>
+    
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>/</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>*</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>-</button>
+
+      <button>0</button>
+      <button class="wide">C</button>
+      <button>=</button>
+      <button>+</button>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+    function add (a, b){
+        let sum;
+        sum = a + b;
+        return sum;
+    }
+
+    function subtract(a, b){
+        let diffrenece = a - b;
+        return diffrenece;
+    }
+
+    function multiply(a, b){
+        let product = a*b;
+        return product;
+    }
+
+    function divide(a, b){
+        let quotient = a / b;
+        return quotient;
+    }
+
+    function operate (a, b){
+        let operand = multiply(a, b);
+        return operand;
+    }
+
+</script>
+
+</html>
